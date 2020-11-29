@@ -20,7 +20,7 @@
         $data = mysqli_query($con, "SELECT * FROM album");
 
         // PRINT: Print data in the column 'title' from each row
-        while ($row = mysqli_fetch_array($hasil)) {
+        while ($row = mysqli_fetch_array($data)) {
             echo $row['title'] . '<br/>';
         }
 
